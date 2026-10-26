@@ -86,7 +86,7 @@ int main() {
 					parent->right=NULL;
 
 				free(temp);
-				printf("Node deleted\n");
+				printf("Node deleted\n"); 
 			}
 			else if(temp->left==NULL) {
 				if(parent==NULL)
@@ -120,7 +120,7 @@ int main() {
 				minnode->data=temp->data;
 				temp->data=data;
 
-				parent=temp;
+				parent=temp; 
 				temp=temp->right;
 
 				while(temp->left!=NULL) {

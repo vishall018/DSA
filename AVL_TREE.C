@@ -52,10 +52,7 @@ int balance(struct node *n) {
     return n == NULL ? 0 : height(n->left) - height(n->right);
 }
 
-struct node* insert(struct node *root, int
-RESULT: 
-The above mentioned program has been executed and verified successfully.
- data) {
+struct node* insert(struct node *root, int data) {
     if (root == NULL)
         return create(data);
 
@@ -75,7 +72,7 @@ The above mentioned program has been executed and verified successfully.
 
     if (b < -1 && data > root->right->data)
         return leftRotate(root);
-
+  
     if (b > 1 && data > root->left->data) {
         root->left = leftRotate(root->left);
         return rightRotate(root);
